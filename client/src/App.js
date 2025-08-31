@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 import YouTubeDownloader from './components/YouTubeDownloader';
 
 function App() {
