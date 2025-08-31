@@ -71,7 +71,8 @@ jspm_packages/
 
 # Gatsby files
 .cache/
-public
+#/public ← تم تعديلها عشان ما تمنعش client/public
+/public
 
 # Storybook build outputs
 .out
