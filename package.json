@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "موقع بسيط لتحميل فيديوهات اليوتيوب",
   "main": "client/src/index.js",
-  "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "echo 'Server is now handled by Vercel API functions'",
-    "client": "cd client && npm start",
-    "build": "cd client && npm install && npm run build",
-    "vercel-build": "cd client && npm install && npm run build",
-    "vercel-build": "echo 'Client will be built by Vercel from client/package.json'",
-    "postinstall": "cd client && npm install",
-    "start": "cd client && npm start",
-    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
-  },
+"scripts": {
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "echo 'Server is now handled by Vercel API functions'",
+  "client": "cd client && npm start",
+  "build": "cd client && npm install && npm run build",
+  "vercel-build": "cd client && npm install && npm run build",
+  "postinstall": "cd client && npm install",
+  "start": "cd client && npm start",
+  "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+},
+
   "keywords": ["youtube", "downloader", "react", "nodejs"],
   "author": "Your Name",
   "license": "MIT",
