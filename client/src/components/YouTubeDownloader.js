@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// تكوين الخادم - يعمل على Vercel بدون تحديد منفذ
+const API_BASE_URL = '';
+
 const YouTubeDownloader = () => {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
@@ -35,7 +38,7 @@ const YouTubeDownloader = () => {
     setError('');
 
     try {
-      const response = await fetch(`/api/info?url=${encodeURIComponent(url)}`);
+      const response = await fetch(`${API_BASE_URL}/api/info?url=${encodeURIComponent(url)}`);
       
       if (!response.ok) {
         let message = 'فشل في الحصول على معلومات الفيديو';
@@ -51,7 +54,7 @@ const YouTubeDownloader = () => {
 
       const data = await response.json();
       setVideoInfo(data);
-      setDownloadUrl(`/api/download?url=${encodeURIComponent(url)}`);
+      setDownloadUrl(`${API_BASE_URL}/api/download?url=${encodeURIComponent(url)}`);
     } catch (error) {
       setError(error.message);
       setVideoInfo(null);
