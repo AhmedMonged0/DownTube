@@ -8,10 +8,8 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon index.js",
     "client": "cd client && npm start",
-    "build": "cd client && npm run build",
-    "vercel-build": "cd client && npm install && npm run build",
     "build": "cd client && npm install && npm run build",
-    "vercel-build": "npm run build",
+    "vercel-build": "echo 'Client will be built by Vercel from client/package.json'",
     "postinstall": "cd client && npm install",
     "start": "cd client && npm run build && node index.js",
     "install-all": "npm install && cd server && npm install && cd ../client && npm install"
