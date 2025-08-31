@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "موقع بسيط لتحميل فيديوهات اليوتيوب",
   "main": "index.js",
+  "homepage": ".",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon index.js",
     "client": "cd client && npm start",
     "build": "cd client && npm run build",
     "vercel-build": "cd client && npm install && npm run build",
+    "build": "cd client && npm install && npm run build",
+    "vercel-build": "npm run build",
     "postinstall": "cd client && npm install",
     "start": "cd client && npm run build && node index.js",
     "install-all": "npm install && cd server && npm install && cd ../client && npm install"
