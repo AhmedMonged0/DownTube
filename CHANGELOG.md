@@ -2,6 +2,24 @@
 
 جميع التغييرات المهمة في هذا المشروع موثقة في هذا الملف.
 
+## [1.3.0] - 2024-12-19
+
+### Added
+- **دعم كامل لـ Vercel**
+  - تحديث التطبيق للعمل على Vercel بدون تعديلات إضافية
+  - استخدام relative URLs للـ API
+  - إزالة الاعتماد على localhost
+
+### Changed
+- **تحديث التطبيق**
+  - تغيير `API_BASE_URL` من `http://localhost:5000` إلى `""`
+  - التطبيق يعمل الآن على Vercel والمحلي معاً
+  - تحديث الوثائق لتوضيح كيفية العمل على Vercel
+
+### Files Modified
+- `client/src/components/YouTubeDownloader.js` - تحديث API_BASE_URL
+- `README.md` - إضافة قسم Vercel
+
 ## [1.2.0] - 2024-12-19
 
 ### Fixed
